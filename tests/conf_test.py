@@ -7,9 +7,9 @@ from google.oauth2.service_account import Credentials as ServiceAccountCredentia
 from gspread_pandas import conf, exceptions
 
 try:
-    from pathlib import WindowsPath, PosixPath
+    from pathlib import PosixPath, WindowsPath
 except ImportError:
-    from pathlib2 import WindowsPath, PosixPath
+    from pathlib2 import PosixPath, WindowsPath
 
 
 def test_get_config_dir():
